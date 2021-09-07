@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jiggle Into JavaScript</title>
+    <title>Watch That Box</title>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 </head>
 <body>
 
-    <p>Press the buttons to move the box!</p>
+    <p>Press the buttons to change the box!</p>
+    <table border="1px">
+        <tr>
+            <td><button id="resetBtn">Reset</button></td>
+            <td><button id="growBtn">Grow</button></td>
+            <td><button id="blueBtn">Blue</button></td>
+            <td><button id="fadeBtn">Fade</button></td>
+        </tr>
+        <tr id="myAdditions" style="display: none;">
+            <td>
+                <button id="makeCircleBtn">Make it a circle!</button><br />
+                <button id="moveRightBtn">Move Right</button><br />
+                <button id="moveLeftBtn">Move Left</button><br />
+            </td>
+            <td>
+                <button id="growHeightBtn">Grow Height</button><br />
+                <button id="shrinkHeightBtn">Shrink Height</button><br />
+                <button id="growWidthBtn">Grow Width</button><br />
+                <button id="shrinkWidthBtn">Shrink Width</button>
+            </td>
+            <td><button id="randomColorBtn">Random color!</button></td>
+            <td><button id="brightenBtn">Brighten</button></td>
+        </tr>
+    </table>
+    <p>When you're done with that, <button id="unHideBtn">make it do cooler stuff!</button></p>
 
-    <div id="box" style="height:150px; width:150px; background-color:orange; margin:25px"></div>
+    <div id="box" style="height:150px; width:150px; background-color:orange; margin:25px; opacity: 1.0;"></div>
 
-    <button id="shrinkBtn">Shrink</button>
-    <button id="growBtn">Grow</button>
-    <button id="resetBtn">Reset</button>
-
-    <script type="text/javascript">
-
-    </script>
+    <script type="text/javascript" src="javascript.js"></script>
 
 </body>
 </html>
