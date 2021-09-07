@@ -83,7 +83,6 @@ document.getElementById("moveRightBtn").addEventListener("click", function() {
     document.getElementById("box").style.marginLeft = theMargin + "px";
 });
 document.getElementById("moveLeftBtn").addEventListener("click", function() {
-    alert(parseInt(document.getElementById("box").style.marginLeft));
     if (parseInt(document.getElementById("box").style.marginLeft) > 25) {
         theMargin = parseInt(document.getElementById("box").style.marginLeft) - originalMargin;
         document.getElementById("box").style.marginLeft = theMargin + "px";
